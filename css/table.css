@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+
+* {
+    font-family: 'Roboto', sans-serif;
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    line-height: 1.5;
+}
+
+html {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    direction: rtl;
+}
+
+body {
+    background: #fcf2e8;
+    position: relative;
+}
+
+header {
+    height: 200px;
+    background-color: #7ac7e5;
+    padding-right: 80px;
+    display: grid;
+    grid-template-columns: 30% 30% 1fr auto;
+    grid-template-rows: 101px 100px 100px;
+    gap: 5%;
+    justify-content: center;
+    align-content: center;
+    margin-top: 20px;
+    border-bottom: #4486a0 10px solid;}
+header .right {
+    padding-top: 85px;
+}
+
+header .title {
+    padding-top: 85px;
+    text-align: center;
+}
+
+header .left {
+    padding-top: 85px;
+} 
+
+p {
+    border: 1px solid black;
+    background: #d2f2ff ;
+    padding-right: 5px;
+}
+
+.activity table,
+.morning table {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.activity table tr:nth-child(even),
+.morning table tr:nth-child(even),
+.activity table tr,
+.morning table tr {
+    border: 1px solid black;
+}
+
+.activity table tr:first-child td, .activity table tr:first-child th,
+.morning table tr:first-child td, .morning table tr:first-child th {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 26px;
+    padding: 5px 10px;
+    border: 1px solid black;
+}
+
+.activity td,
+.morning td {
+    min-width: 100px;
+    border: 1px solid black;
+}
+
+.activity table {
+    padding-top: 200px;
+    overflow-x: auto;
+    max-height: 140px;
+    grid-template-columns: 30% 30% 1fr auto;
+    grid-template-rows: 101px 100px 100px;
+    gap: 5%;
+}
+
+.activity table tr {
+    background-color: #E0E0E0;
+}
+
+.activity table tr:nth-child(even) {
+    background-color: #F1F1F1;
+}
+
+.morning table {
+    grid-template-columns: 30% 30% 1fr auto;
+    grid-template-rows: 100px 100px 50px;
+}
+
+.morning table tr {
+    background-color: #d5e7ff;
+}
+
+.morning table tr:nth-child(even) {
+    background-color: #f3f3f3;
+}
+@media screen and (max-width: 500px) {
+    header{
+        padding-right: 10px;
+        gap: 2%;
+        margin-top: 0px;
+        height: 340px;
+        width: max-content;
+    }
+    header .right {
+        padding-top: 60px;
+        text-align: center;
+    }
+    header .title {
+        padding-top: 60px;
+    }
+    header .left {
+        padding-top: 60px;
+        text-align: center;
+    }
+    .activity {
+        margin-left: -190px;
+    }
+    .morning .y {
+        margin-right: 100px;
+    }
+}
+
